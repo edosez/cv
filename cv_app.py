@@ -10,8 +10,11 @@ profile_pic = current_dir / "assets" / "foto.jpg"
 
 # --- GENERAL SETTINGS ---
 PAGE_TITLE = "Digital CV | Edoardo Sezzi"
-PAGE_ICON = ":wave:"
+PAGE_ICON = ":computer:"
 NAME = "Edoardo Sezzi"
+
+# --- PAGE CONFIGURATION ---
+st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
 
 # --- LOAD CSS, PDF & PROFIL PIC ---
 with open(css_file) as f:
