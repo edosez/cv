@@ -15,9 +15,9 @@ NAME = "Edoardo Sezzi"
 
 # --- LOAD CSS, PDF & PROFIL PIC ---
 with open(css_file) as f:
-    st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
+  st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 with open(resume_file, "rb") as pdf_file:
-    PDFbyte = pdf_file.read()
+  PDFbyte = pdf_file.read()
 profile_pic = Image.open(profile_pic)
 
 #####################
@@ -180,12 +180,12 @@ txt2('GitHub', 'https://github.com/edosez')
 st.markdown('''
 ## Hobby
 ''')
-st.info('**Sports**')
+st.info('**Sports**', icon='🏃‍♂️')
 st.markdown('''Agonistic track and road runner
 ''')
-st.info('**Hiking**')
+st.info('**Hiking**', icon='⛰️')
 st.markdown('''My greatest accomplishment has been completing the Tour of Mont Blanc by myself (180km and 12000m D+)
 ''')
-st.info('**Trading**')
+st.info('**Trading**', icon='💹')
 st.markdown('''I am a self-taught trader, I have been trading for a couple years, mainly options on indexes and certificates. I have developed a Python bot which scraped and store data from investing.com. The main goal was to create an optimization algorithm to find the strategy that would maximize expected payoff for options trading given a set of constraints (e.g. margin, number of options). 
 ''')
