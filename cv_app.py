@@ -32,7 +32,7 @@ st.image(profile_pic, width=150)
 
 st.markdown('## Summary', unsafe_allow_html=True)
 st.info('''
-Experienced data professional, with a strong background in data analysis, data visualization, data management and machine learning.
+Experienced data professional with cross-field skillset, combining data expertise with software engineering practices. Involved in client-related conversations and pre-sales engagement.
 ''')
 
 #####################
@@ -58,6 +58,9 @@ st.markdown("""
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#skills">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#portfolio">Portfolio</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#hobbies">Hobby</a>
@@ -101,51 +104,37 @@ def txt4(a, b, c):
 
 #####################
 st.markdown('''
-## Work Experience
+## **Work Experience**
 ''')
 
-txt('**Data & Product**, *Afiniti, Milan, Italy*', 
-    '2019-Present')
+txt('#### Data & Product, *Afiniti, Milan, Italy*', 
+    '#### 2019-Present')
 st.info('**Product & Prototyping**')
 st.markdown('''
-- Designed and developed an internal product: Led the end-to-end design and development of an internal product that revolutionized the client discovery process. This product facilitated seamless access to a centralized repository of critical data points required for Afiniti modeling. Implemented a robust data pipeline that efficiently handled user inputs, stored data in a Relational Database, and monitored activity and data quality. Successfully integrated the application into the enterprise portal, enabling real-time monitoring of company KPIs.
-- Development of an omnichannel recommendation prototype, nudging customers from one touchpoint to another. Responsible for data pipeline, EDA and offline unsupervised clustering algorithm (k-modes) modules.
-- Design and development of a prototype assessing fairness in a Contact Center environment through the use of a Discrete Event Simulation model, which involves the generation of counterfactuals and hypotheses tests.
+As part of the Product team, I am responsible for developing prototypes and proofs of concept for new products and features. This activity requires a deep understanding of prospect clients pain points combined with a solid technological understanding and a quick iteration process.
 ''')
-st.info('**Data & Analytics**')
+st.info('**Data, Analytics & Machine Learning**')
 st.markdown('''
-- Design and development of a Customer Lifetime Value model for improving existing revenue metric. This metric has been then optimized by Afiniti proprietary algorithms, returning a `+30%` increase in performance compared to previous metric.
-- Deployed Afiniti data integration solution for clients in the EMEA region. The activity required discovery activities (explore clients' data environment), data transfer, validation and transformation. Constant client exposure and communication, both setting expectations and managing internal requests to improve the deployment outcome.
+As part of the Data team, I am responsible for the data engagement with the client, leading optimization metric conversations and closely collaborating with client's data team to ensure a smooth integration of Afiniti into the client's data ecosystem.
 ''')
 
-
-txt('**Data Scientist**, Customer Vale Management, *Nexi, Milan, Italy*',
-    '2017-2019')
+txt('#### Data Scientist, CVM, *Nexi, Milan, Italy*',
+    '#### 2017-2019')
+st.info('**Data, Analytics & Machine Learning**')
 st.markdown('''
-- Development of an Attribution Model to assess economic impact of the engagement program on CVM revenues
-- First deployment into production of a machine learning algorithm
-- Definition of Nexi Personas through a mixed approach:
-    - Data Driven Segmentation - a view from the inside through internal data
-    - Market Research Segmentation - a view from the outside through market research data
-    - Final synthesis and personas through a combination of Segmentations
-- Development of a mobile payer inactivity score to trigger campaign communications
-- Design, development and prototyping of a data monetization service exposed to partner banks - focus on backend datamarts
+As the first data person in the Customer Value Management team, I was responsible for the implementation of data-driven solutions to improve customer experience and increase customer value. I was also the business point of contact with centralizwed Data team to collect and organize new data requests.
 ''')
             
-txt('**Analytics Consultant**, *Jakala, Milan, Italy*',
-'2015-2017')
+txt('#### Analytics Consultant, *Jakala, Milan, Italy*',
+'#### 2015-2017')
+st.info('**Data, Analytics & Machine Learning**')
 st.markdown('''
-- Data analyses for a variety of clients in different industries across Italy and Europe. Development of predictive and descriptive models through data mining techniques in order to provide valuable insights and impactful results. Some example:
-- Behavioral segmentation (k-means) and deterministic segmentation (RFM)
-- Development of churn model for a leading European shoes retailer
-- Development of predictive model to assess the probability of repurchase for new clients
-- Comprehensive CRM support: structured reporting and spot analyses necessary to assess business performance through KPIs and trends
-- Integration of statistical analyses with geographical data (elaborated with ArcGis)
+Data analyses for several clients across different industries and geographies. Development of predictive models and ad-hoc analysis, alongside usage of geographical information systems (GIS) to provide actionable insights to clients.
 ''')
             
 #####################
 st.markdown('''
-## Education
+## **Education**
 ''')
 
 txt('**Master of Science** Economics, *Bocconi University*, Milan, Italy',
@@ -158,7 +147,7 @@ txt('**Bachelors of Science** Economics, *Bocconi University*, Milan, Italy',
 
 #####################
 st.markdown('''
-## Skills
+## **Skills**
 ''')
 txt3('Programming', '`Python`, `Linux`')
 txt3('Data processing/wrangling', '`SQL`, `pandas`, `numpy`')
@@ -171,14 +160,72 @@ txt3('Infra', '`Docker`, `GCP`')
 
 #####################
 st.markdown('''
-## Social Media
+## **Portfolio**
+''')
+            
+txt('#### **Software and data engineering**', 
+    '#### *Afiniti*')
+st.info('**Data discovery app**')
+st.markdown('''
+- Overview: developed and led the design of an internal data governance product that transformed client discovery. Simplified access to critical data for Afiniti modeling through a centralized repository. Implemented an efficient data pipeline, ensuring data quality and user input handling. Integrated the application into the enterprise portal for real-time monitoring of company KPIs.
+- Stack: `Python`, `Django`, `Docker`, `Linux`
+- Keywords: `data governance`, `data pipeline`, `product roadmap`
+''')
+st.info('**Channel recommendation prototype**')
+st.markdown('''
+- Overview: evelopment of an omnichannel recommendation prototype, nudging customers from one touchpoint to another. Responsible for data pipeline, EDA and offline unsupervised clustering algorithm (k-modes) modules.
+- Stack: `Python`, `Selenium`, `Docker`, `GCP` 
+- Keywords: `omnichannel`, `recommendation`, `clustering`
+''')
+st.info('**Fairness in Contact Center**')
+st.markdown('''
+- Overview: design and development of a prototype assessing fairness in a Contact Center environment through the use of a Discrete Event Simulation model, which involves the generation of counterfactuals and hypotheses tests.
+- Stack: `Python`, `Docker`, `Linux`
+- Keywords: `fairness`, `counterfactuals`, `causal inference`, `hypotheses tests`
+''')
+txt('#### **Data, Analytics & Machine Learning**', 
+    '#### *Afiniti*')
+st.info('**Customer Lifetime Value**')
+st.markdown('''
+- Overview: design and development of a Customer Lifetime Value model for improving existing revenue metric. This metric has been then optimized by Afiniti proprietary algorithms, returning a `+30%` increase in performance compared to previous metric.
+- Stack: `Python`, `SQL`, `Docker`, `Linux`
+- Keywords: `customer lifetime value`, `revenue`, `optimization`
+''')
+txt('#### **Data, Analytics & Machine Learning**', 
+    '#### *Nexi*')
+st.info('**Attribution Model**')
+st.markdown('''
+- Overview: development of an Attribution Model to assess economic impact of the engagement program on CVM revenues
+- Stack: `SAS`, `SQL`, `Python`
+- Keywords: `attribution model`, `revenue`
+''')
+st.info('**Clustering**')
+st.markdown('''
+- Overview: definition of Nexi Personas through a mixed approach:
+    - Data Driven Segmentation - a view from the inside through internal data
+    - Market Research Segmentation - a view from the outside through market research data
+    - Final synthesis and personas through a combination of Segmentations used for defining digital strategy
+- Stack: `SAS`, `SQL`, `Python`
+- Keywords: `personas`, `clustering`
+''')
+st.info('**Business intelligence**')
+st.markdown('''
+- Overview: design and development of a data monetization service exposed to partner banks - focus on backend datamarts
+- Stack: `SAS`, `SQL`
+- Keywords: `business intelligence`, `data modelling`
+''')
+
+
+#####################
+st.markdown('''
+## **Social Media**
 ''')
 txt2('LinkedIn', 'https://www.linkedin.com/in/edoardo-sezzi')
 txt2('GitHub', 'https://github.com/edosez')
 
 #####################
 st.markdown('''
-## Hobby
+## **Hobby**
 ''')
 st.info('**Sports**', icon='🏃‍♂️')
 st.markdown('''Agonistic track and road runner
@@ -187,5 +234,5 @@ st.info('**Hiking**', icon='⛰️')
 st.markdown('''My greatest accomplishment has been completing the Tour of Mont Blanc by myself (180km and 12000m D+)
 ''')
 st.info('**Trading**', icon='💹')
-st.markdown('''I am a self-taught trader, I have been trading for a couple years, mainly options on indexes and certificates. I have developed a Python bot which scraped and store data from investing.com. The main goal was to create an optimization algorithm to find the strategy that would maximize expected payoff for options trading given a set of constraints (e.g. margin, number of options). 
+st.markdown('''I am a self-taught trader, I have been trading for a couple years, mainly options on indexes and certificates. I have developed a Python bot which scraped and store data from the web. The main goal was to create an optimization algorithm to find the strategy that would maximize expected payoff for options trading given a set of constraints (e.g. margin, number of options). 
 ''')
