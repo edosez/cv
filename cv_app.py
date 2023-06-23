@@ -133,13 +133,15 @@ txt('#### Data & Product, *Afiniti, Milan, Italy*',
     '#### 2019-Present')
 st.info('**Product & Prototyping**')
 st.markdown('''
-- Prototypes development 
-- Oppurtunity spaces mapping and product requirements definition
+- Prototypes development for new products (backend, data pipelines, frontend)
+- Opportunity spaces mapping and product requirements definition
 ''')
 st.info('**Data, Analytics & Machine Learning**')
 st.markdown('''
+- Responsible for data integration and data architecture design
 - Responsible for client data engagement - data requirements and data integration/architecture proposal
-- Lead client conversations about optimization metric and technical design (what to optimize, necessary data, etc.)
+- Lead client conversations about optimization metric
+- Design, development and implementation of optimization metrics based on ML
 ''')
 
 txt('#### Data Scientist, CVM, *Nexi, Milan, Italy*',
