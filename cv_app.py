@@ -21,7 +21,6 @@ with open(css_file) as f:
   st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 with open(resume_file, "rb") as pdf_file:
   PDFbyte = pdf_file.read()
-profile_pic = Image.open(profile_pic)
 
 #####################
 # Header 
@@ -30,8 +29,9 @@ st.write('''
 ##### *Resume* 
 ''')
 
-#image = Image.open('dp.png')
-st.image(profile_pic, width=150)
+st.markdown(
+    '<img src="./app/static/foto.jpg" width="100" class="center">',
+    unsafe_allow_html=True)
 
 st.markdown('## Summary', unsafe_allow_html=True)
 st.info('''
@@ -117,12 +117,11 @@ st.markdown('''
 ## **Social Media**
 ''')
 st.markdown(
-    '<a href="https://www.linkedin.com/in/edoardo-sezzi"><img src="./app/static/linkedin_logo_blue.png" height="100" class="center">',
+    '<a href="https://www.linkedin.com/in/edoardo-sezzi"><img src="./app/static/linkedin_logo_blue.png" height="75" width="75" class="center">',
     unsafe_allow_html=True)
 st.markdown(
-    '<a href="https://github.com/edosez/"><img src="./app/static/github_logo.png" height="100" class="center">',
-    unsafe_allow_html=True,
-)
+    '<a href="https://github.com/edosez/"><img src="./app/static/github_logo.png" height="75" width="75" class="center">',
+    unsafe_allow_html=True)
 
 #####################
 st.markdown('''
