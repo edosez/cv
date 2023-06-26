@@ -90,11 +90,11 @@ def txt2(a, b):
     st.markdown(b)
 
 def txt3(a, b):
-  col1, col2 = st.columns([1,2])
+  col1, col2 = st.columns([1, 2])
   with col1:
-    st.markdown(a)
+    st.markdown(a, unsafe_allow_html=True)
   with col2:
-    st.markdown(b)
+    st.markdown(b, unsafe_allow_html=True)
   
 def txt4(a, b, c):
   col1, col2, col3 = st.columns([1.5,2,2])
@@ -104,6 +104,15 @@ def txt4(a, b, c):
     st.markdown(b)
   with col3:
     st.markdown(c)
+
+def socials(a, b):
+  col1, col2, col3, col4, col5, col6 = st.columns(6)
+  with col1:
+    st.markdown(a, unsafe_allow_html=True)
+  with col2:
+    st.markdown(b, unsafe_allow_html=True)
+
+
 
 #####################
 st.markdown('''
@@ -116,12 +125,10 @@ st.info('**edoardo.sezzi@hotmail.it**', icon='✉️')
 st.markdown('''
 ## **Social Media**
 ''')
-st.markdown(
-    '<a href="https://www.linkedin.com/in/edoardo-sezzi"><img src="./app/static/linkedin_logo_blue.png" height="75" width="75" class="center">',
-    unsafe_allow_html=True)
-st.markdown(
-    '<a href="https://github.com/edosez/"><img src="./app/static/github_logo.png" height="75" width="75" class="center">',
-    unsafe_allow_html=True)
+            
+socials('<a href="https://www.linkedin.com/in/edoardo-sezzi"><img src="./app/static/linkedin_logo_blue.png" height="50" width="50" class="center">',
+        '<a href="https://github.com/edosez"><img src="./app/static/github_logo.png" height="50" width="50" class="center">'
+        )
 
 #####################
 st.markdown('''
