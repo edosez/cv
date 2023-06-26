@@ -66,7 +66,7 @@ st.markdown("""
         <a class="nav-link" href="#portfolio">Portfolio</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#hobbies">Hobby</a>
+        <a class="nav-link" href="#hobby">Hobby</a>
       </li>
     </ul>
   </div>
@@ -117,10 +117,10 @@ st.markdown('''
 ## **Social Media**
 ''')
 st.markdown(
-    '<a href="https://www.linkedin.com/in/edoardo-sezzi"><img src="./app/static/linkedin_logo_blue.png" height="100">',
+    '<a href="https://www.linkedin.com/in/edoardo-sezzi"><img src="./app/static/linkedin_logo_blue.png" height="100" class="center">',
     unsafe_allow_html=True)
 st.markdown(
-    '<a href="https://github.com/edosez/"><img src="./app/static/github_logo.png" height="100">',
+    '<a href="https://github.com/edosez/"><img src="./app/static/github_logo.png" height="100" class="center">',
     unsafe_allow_html=True,
 )
 
@@ -264,7 +264,7 @@ st.info('**Sports**', icon='🏃‍♂️')
 st.markdown('''Agonistic track and road runner
 ''')
 st.info('**Hiking**', icon='⛰️')
-st.markdown('''My greatest accomplishment has been completing the Tour of Mont Blanc by myself (180km and 12000m D+)
+st.markdown('''My greatest accomplishment has been completing the Tour of Mont Blanc in 8 days (180km and 12000m D+)
 ''')
 st.info('**Trading**', icon='💹')
 st.markdown('''I am a self-taught trader, I have been trading for a couple years, mainly options on indexes and certificates. I have developed a Python bot which scraped and stored data from the web. The main goal was to create an optimization algorithm to find the strategy that would maximize expected payoff for options trading given a set of constraints (e.g. margin, number of options) 
