@@ -5,7 +5,7 @@ from pathlib import Path
 # --- PATH SETTINGS ---
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "styles" / "main.css"
-resume_file = current_dir / "assets" / "CV Edoardo Sezzi.pdf"
+resume_file = current_dir / "assets" / "CV Edoardo Sezzi - tech.pdf"
 profile_pic = current_dir / "assets" / "foto.jpg"
 
 # --- GENERAL SETTINGS ---
@@ -112,14 +112,18 @@ def socials(a, b):
   with col2:
     st.markdown(b, unsafe_allow_html=True)
 
-
-
 #####################
 st.markdown('''
 ## **Contacts**
 ''')
 st.info('**+39-3341115868**', icon='📲')
 st.info('**edoardo.sezzi@hotmail.it**', icon='✉️')
+
+#####################
+st.markdown('''
+## **Curriculum Vitae**
+''')
+st.download_button(label=':red[Download the CV]', data=PDFbyte, file_name='CV Edoardo Sezzi.pdf', mime='application/pdf', key=None)
 
 #####################
 st.markdown('''
@@ -220,7 +224,7 @@ st.markdown('''
 st.info('**Fairness in Contact Center**')
 st.markdown('''
 - Overview:
-  - Design and development of a prototype assessing fairness in a Contact Center environment through the use of a Discrete Event Simulation modely
+  - Design and development of a prototype assessing fairness in a Contact Center environment through the use of a Discrete Event Simulation for counterfactuals generation
   - Fairness is assessed through the use of counterfactuals and hypothesis tests
 - Stack: `Python`, `Docker`, `Linux`
 - Keywords: `fairness`, `counterfactuals`, `causal inference`, `hypotheses tests`
@@ -241,7 +245,7 @@ txt('#### **Data, Analytics & Machine Learning**',
 st.info('**Attribution Model**')
 st.markdown('''
 - Overview: 
-  - Development of an Attribution Model to assess economic impact of the engagement program on customer behaviour
+  - Development of an Attribution Model to assess economic impact of the engagement program on customer payment behavior
 - Stack: `SAS`, `SQL`, `Python`
 - Keywords: `attribution model`, `forecasting`
 ''')
