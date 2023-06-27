@@ -33,7 +33,7 @@ st.markdown(
     '<img src="./app/static/foto.jpg" width="100" class="center">',
     unsafe_allow_html=True)
 
-st.markdown('## Summary', unsafe_allow_html=True)
+st.markdown('''## **Summary**''', unsafe_allow_html=True)
 st.info('''
 Experienced data professional with cross-field skillset, combining data expertise with software engineering practices. Involved in client-related conversations and pre-sales engagement.
 ''')
