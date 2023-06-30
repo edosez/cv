@@ -1,6 +1,7 @@
 import streamlit as st
 from PIL import Image
 from pathlib import Path
+from utils import *
 
 # --- PATH SETTINGS ---
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
@@ -28,10 +29,19 @@ st.write('''
 # Edoardo Sezzi
 ##### *Resume* 
 ''')
+         
+st.markdown('''
+## **Info**
+''')
+st.info('**+39-3341115868**', icon='📲')
+st.info('**edoardo.sezzi@hotmail.it**', icon='✉️')
 
-st.markdown(
-    '<img src="./app/static/foto.jpg" width="100" class="center">',
-    unsafe_allow_html=True)
+#####################            
+info('<a href="https://www.linkedin.com/in/edoardo-sezzi"><img src="./app/static/linkedin_logo_blue.png" height="50" width="50" class="center">',
+        '<a href="https://github.com/edosez"><img src="./app/static/github_logo.png" height="50" width="50" class="center">',
+        PDFbyte,
+        '<img src="./app/static/foto.jpg" width="100" class="center">'
+        )
 
 st.markdown('''## **Summary**''', unsafe_allow_html=True)
 st.info('''
@@ -72,67 +82,6 @@ st.markdown("""
   </div>
 </nav>
 """, unsafe_allow_html=True)
-
-#####################
-# Custom function for printing text
-def txt(a, b):
-  col1, col2 = st.columns([4,1])
-  with col1:
-    st.markdown(a)
-  with col2:
-    st.markdown(b)
-
-def txt2(a, b):
-  col1, col2 = st.columns([1,4])
-  with col1:
-    st.markdown(f'`{a}`')
-  with col2:
-    st.markdown(b)
-
-def txt3(a, b):
-  col1, col2 = st.columns([1, 2])
-  with col1:
-    st.markdown(a, unsafe_allow_html=True)
-  with col2:
-    st.markdown(b, unsafe_allow_html=True)
-  
-def txt4(a, b, c):
-  col1, col2, col3 = st.columns([1.5,2,2])
-  with col1:
-    st.markdown(f'`{a}`')
-  with col2:
-    st.markdown(b)
-  with col3:
-    st.markdown(c)
-
-def socials(a, b):
-  col1, col2, col3, col4, col5, col6 = st.columns(6)
-  with col1:
-    st.markdown(a, unsafe_allow_html=True)
-  with col2:
-    st.markdown(b, unsafe_allow_html=True)
-
-#####################
-st.markdown('''
-## **Contacts**
-''')
-st.info('**+39-3341115868**', icon='📲')
-st.info('**edoardo.sezzi@hotmail.it**', icon='✉️')
-
-#####################
-st.markdown('''
-## **Curriculum Vitae**
-''')
-st.download_button(label=':red[Download the CV]', data=PDFbyte, file_name='CV Edoardo Sezzi.pdf', mime='application/pdf', key=None)
-
-#####################
-st.markdown('''
-## **Social Media**
-''')
-            
-socials('<a href="https://www.linkedin.com/in/edoardo-sezzi"><img src="./app/static/linkedin_logo_blue.png" height="50" width="50" class="center">',
-        '<a href="https://github.com/edosez"><img src="./app/static/github_logo.png" height="50" width="50" class="center">'
-        )
 
 #####################
 st.markdown('''
