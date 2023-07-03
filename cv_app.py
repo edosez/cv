@@ -1,5 +1,5 @@
-import streamlit as st
 from pathlib import Path
+import streamlit as st
 from utils import txt, txt2
 
 # --- PATH SETTINGS ---
@@ -23,14 +23,15 @@ with open(resume_file, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
 
 #####################
-# Header 
+# Header
 st.write('''
 # Edoardo Sezzi
 ##### *Resume* 
 ''')
 st.markdown('''## **Summary**''', unsafe_allow_html=True)
 st.info('''
-Experienced data professional with cross-field skillset, combining data expertise with software engineering practices. Involved in client-related conversations and pre-sales engagement.
+Experienced data professional with a diverse skillset, combining expertise in data analysis with software engineering practices. 
+I actively engage in client conversations and pre-sales activities.
 ''')
 
 with st.container():
@@ -40,17 +41,17 @@ with st.container():
     st.info('**+39-3341115868**', icon='📲')
     st.info('**edoardo.sezzi@hotmail.it**', icon='✉️')
 
-  #####################          
-    st.markdown('<a href="https://www.linkedin.com/in/edoardo-sezzi"><img src="./app/static/linkedin_logo_blue.png" height="50" width="50" class="center">', 
+  #####################
+    st.markdown('<a href="https://www.linkedin.com/in/edoardo-sezzi"><img src="./app/static/linkedin_logo_blue.png" height="50" width="50" class="center">',
                 unsafe_allow_html=True)
-    st.markdown('<a href="https://github.com/edosez"><img src="./app/static/github_logo.png" height="50" width="50" class="center">', 
+    st.markdown('<a href="https://github.com/edosez"><img src="./app/static/github_logo.png" height="50" width="50" class="center">',
                 unsafe_allow_html=True)
     st.download_button(label=':red[Download the CV]', data=PDFbyte, file_name='CV Edoardo Sezzi.pdf', mime='application/pdf', key=None, use_container_width=True)
 
 #####################
 # Navigation
 
-st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">', 
+st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">',
             unsafe_allow_html=True)
 
 st.markdown("""
@@ -88,11 +89,11 @@ st.markdown('''
 ## **Work Experience**
 ''')
 
-txt('#### Data & Product, *Afiniti, Milan, Italy*', 
+txt('#### Data & Product, *Afiniti, Milan, Italy*',
     '#### 2019-Present')
 st.info('**Product & Prototyping**')
 st.markdown('''
-- Prototypes development for new products (backend, data pipelines, frontend)
+- Prototypes development for new products, encompassing backend, data pipelines, and frontend components
 - Opportunity spaces mapping and product requirements definition
 ''')
 st.info('**Data, Analytics & Machine Learning**')
@@ -100,7 +101,7 @@ st.markdown('''
 - Responsible for data integration and data architecture design
 - Responsible for client data engagement - data requirements and data integration/architecture proposal
 - Lead client conversations about optimization metric
-- Design, development and implementation of optimization metrics based on ML
+- Design, development and implementation of ML-based optimization metrics
 ''')
 
 txt('#### Data Scientist, CVM, *Nexi, Milan, Italy*',
@@ -111,7 +112,7 @@ st.markdown('''
 - Responsible for design and implementation of data-driven solutions to improve customer experience and increase customer value
 - Close collaboration with centralized Data team to collect, organize and develop new data source integration
 ''')
-            
+
 txt('#### Analytics Consultant, *Jakala, Milan, Italy*',
 '#### 2015-2017')
 st.info('**Data, Analytics & Machine Learning**')
@@ -119,7 +120,7 @@ st.markdown('''
 - Data analyses for clients across different industries and geographies
 - Development of predictive models and ad-hoc analysis, alongside usage of geographical information systems (GIS) to provide actionable insights to clients
 ''')
-            
+
 #####################
 st.markdown('''
 ## **Education**
@@ -150,25 +151,25 @@ txt2('Infra', '`Docker`, `GCP`')
 st.markdown('''
 ## **Portfolio**
 ''')
-            
-txt('#### **Software and data engineering**', 
+
+txt('#### **Software and data engineering**',
     '#### *Afiniti*')
 st.info('**Data discovery app**')
 st.markdown('''
 - Overview: 
-  - Developed and led the design of an internal data governance product to support client's team during discovery phase.
-  - Integrated the application into the enterprise portal for monitoring of company KPIs.
-- Stack: `Python`, `Django`, `Docker`, `Linux`
+  - Developed and led the design of an internal data governance product to support account teams across Afiniti during discovery phase.
+  - Integrated the application into the enterprise portal as an enterprise KPI.
+- Stack: `Python`, `Django`, `Docker`, `Linux`, `HTML`, `CSS`
 - Keywords: `data governance`, `data pipeline`
 ''')
 st.info('**Channel recommendation prototype**')
 st.markdown('''
 - Overview: 
-  - Development of an omnichannel recommendation prototype, nudging customers from one touchpoint to another
+  - Development of an omnichannel recommendation prototype, nudging customers from one touchpoint to another (e.g. from web to call center)
   - Responsible for data pipeline, EDA and offline unsupervised clustering algorithm (k-modes) modules
-  - Simulated web traffic data
+  - Simulated web traffic data to generate synthetic data
 - Stack: `Python`, `Selenium`, `Docker`, `GCP` 
-- Keywords: `omnichannel`, `clustering`, `simulation`
+- Keywords: `omnichannel`, `clustering`, `web simulation`
 ''')
 st.info('**Fairness in Contact Center**')
 st.markdown('''
@@ -178,18 +179,18 @@ st.markdown('''
 - Stack: `Python`, `Docker`, `Linux`
 - Keywords: `fairness`, `counterfactuals`, `causal inference`, `hypotheses tests`
 ''')
-txt('#### **Data, Analytics & Machine Learning**', 
+txt('#### **Data, Analytics & Machine Learning**',
     '#### *Afiniti*')
 st.info('**Customer Lifetime Value**')
 st.markdown('''
 - Overview: 
   - Design and development of a Customer Lifetime Value model for improving existing revenue metric
   - Collaboration with both internal (ML and data engineers) and external (Finance team) stakeholders
-  - The metric has been optimized using Afiniti proprietary algorithms, returning a `+30%` increase in performance compared to previous metric.
+  - The metric has been optimized using Afiniti proprietary algorithms, returning a `+30%` increase in performance compared to previous metric
 - Stack: `Python`, `SQL`, `R`, `Docker`, `Linux`
 - Keywords: `customer lifetime value`, `revenue`, `optimization`
 ''')
-txt('#### **Data, Analytics & Machine Learning**', 
+txt('#### **Data, Analytics & Machine Learning**',
     '#### *Nexi*')
 st.info('**Attribution Model**')
 st.markdown('''
@@ -203,9 +204,10 @@ st.markdown('''
 - Overview: definition of Nexi Personas through a mixed approach:
     - Data Driven Segmentation - a view from the inside through internal data
     - Market Research Segmentation - a view from the outside through market research data
-    - Final synthesis and personas through a combination of Segmentations used for defining digital strategy
+    - Combination of inside-in and inside-out views through inference on the market research data
+- The results helped informing the digital strategy of the company (which clients to target, which digital products to develop, etc.)
 - Stack: `SAS`, `SQL`, `Python`
-- Keywords: `clustering`
+- Keywords: `clustering`, `market research`
 ''')
 st.info('**Business intelligence**')
 st.markdown('''
@@ -228,8 +230,9 @@ st.markdown(
     completing the Tour of Mont Blanc in 8 days (180km and 12000m D+)
 ''')
 st.info('**Trading**', icon='💹')
-st.markdown(
-    '''I am a self-taught trader, I have been trading for a couple years, mainly options on indexes and certificates. 
-    I have developed a Python bot which scraped and stored data from the web. The main goal was to create an optimization algorithm to find the strategy that would maximize expected payoff for options trading given a set of constraints (e.g. margin, number of options)
+st.markdown('''
+I am a self-taught trader, I have been trading for a couple years, mainly options on indexes and certificates. 
+I have developed a Python bot which scraped and stored data from the web. I have developed a Python bot which scraped and stored data from the web.
+The main goal was to create an optimization algorithm to find the strategy that would maximize expected payoff for options trading given a set of constraints (e.g. margin, number of options)
 ''')
             
