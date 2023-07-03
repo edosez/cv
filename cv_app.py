@@ -63,6 +63,8 @@ st.markdown("""<hr style="height:10px;border:none;color:#333;background-color:#1
 #####################
 # Navigation
 
+st.markdown("""<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-WmUxIkItzK/KdCc6jy9oQhxixF4DzR+UGr2OmegDxuBl4c5E7Pf+T5sDWmORAR5V" crossorigin="anonymous"></script>""",
+            unsafe_allow_html=True)
 st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">',
             unsafe_allow_html=True)
 
