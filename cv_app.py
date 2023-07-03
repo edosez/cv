@@ -22,44 +22,6 @@ with open(css_file, encoding='utf-8') as f:
 with open(resume_file, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
 
-# Remove anchor across all document
-st.markdown("""
-    <style>
-    .css-15zrgzn {display: none}
-    .css-eczf16 {display: none}
-    .css-jn99sy {display: none}
-    </style>
-    """, unsafe_allow_html=True)
-
-#####################
-# Header
-st.write('''
-# Edoardo Sezzi
-##### *Resume* 
-''')
-st.markdown('''## **Summary**''', unsafe_allow_html=True)
-st.info('''
-Experienced data professional with a diverse skillset, combining expertise in data analysis with software engineering practices. 
-I actively engage in client conversations and pre-sales activities.
-''')
-
-with st.container():
-    st.markdown('''
-    ## **Info**
-    ''')
-    st.info('**+39-3341115868**', icon='📲')
-    st.info('**edoardo.sezzi@hotmail.it**', icon='✉️')
-
-  #####################
-    st.markdown('<a href="https://www.linkedin.com/in/edoardo-sezzi"><img src="./app/static/linkedin_logo_blue.png" height="50" width="50" class="center">',
-                unsafe_allow_html=True)
-    st.markdown('<a href="https://github.com/edosez"><img src="./app/static/github_logo.png" height="50" width="50" class="center">',
-                unsafe_allow_html=True)
-    st.download_button(label=':red[Download the CV]', data=PDFbyte, file_name='CV Edoardo Sezzi.pdf', mime='application/pdf', key=None, use_container_width=True)
-
-st.markdown("""<hr style="height:10px;border:none;color:#333;background-color:#16A2CB;" /> """,
-            unsafe_allow_html=True)
-
 #####################
 # Navigation
 
@@ -108,6 +70,44 @@ st.markdown("""
   </div>
 </nav>
 """, unsafe_allow_html=True)
+
+# Remove anchor across all document
+st.markdown("""
+    <style>
+    .css-15zrgzn {display: none}
+    .css-eczf16 {display: none}
+    .css-jn99sy {display: none}
+    </style>
+    """, unsafe_allow_html=True)
+
+#####################
+# Header
+st.write('''
+# Edoardo Sezzi
+##### *Resume* 
+''')
+st.markdown('''## **Summary**''', unsafe_allow_html=True)
+st.info('''
+Experienced data professional with a diverse skillset, combining expertise in data analysis with software engineering practices. 
+I actively engage in client conversations and pre-sales activities.
+''')
+
+with st.container():
+    st.markdown('''
+    ## **Info**
+    ''')
+    st.info('**+39-3341115868**', icon='📲')
+    st.info('**edoardo.sezzi@hotmail.it**', icon='✉️')
+
+  #####################
+    st.markdown('<a href="https://www.linkedin.com/in/edoardo-sezzi"><img src="./app/static/linkedin_logo_blue.png" height="50" width="50" class="center">',
+                unsafe_allow_html=True)
+    st.markdown('<a href="https://github.com/edosez"><img src="./app/static/github_logo.png" height="50" width="50" class="center">',
+                unsafe_allow_html=True)
+    st.download_button(label=':red[Download the CV]', data=PDFbyte, file_name='CV Edoardo Sezzi.pdf', mime='application/pdf', key=None, use_container_width=True)
+
+st.markdown("""<hr style="height:10px;border:none;color:#333;background-color:#16A2CB;" /> """,
+            unsafe_allow_html=True)
 
 #####################
 st.markdown('''
