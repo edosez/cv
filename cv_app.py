@@ -68,30 +68,32 @@ st.markdown('<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/b
 
 st.markdown("""
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #16A2CB;">
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link active" href="/">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="#work-experience">Work Experience</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="#education">Education</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="#skills">Skills</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="#portfolio">Portfolio</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="#hobby">Hobby</a>
-      </li>
-    </ul>
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#work-experience">Work Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#hobby">Hobby</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
 """, unsafe_allow_html=True)
