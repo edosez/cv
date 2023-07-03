@@ -1,6 +1,6 @@
 import streamlit as st
 from pathlib import Path
-from utils import txt, txt3
+from utils import txt, txt2
 
 # --- PATH SETTINGS ---
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
@@ -137,14 +137,14 @@ txt('**Bachelors of Science** Economics, *Bocconi University*, Milan, Italy',
 st.markdown('''
 ## **Skills**
 ''')
-txt3('Programming', '`Python`, `Linux`')
-txt3('Data processing/wrangling', '`SQL`, `pandas`, `numpy`')
-txt3('Data testing',  '`great expectations`')
-txt3('Data visualization', '`matplotlib`, `seaborn`, `plotly`')
-txt3('Automation', '`Selenium`')
-txt3('Machine Learning', '`scikit-learn`')
-txt3('Web development', '`Dash`, `Django`, `streamlit`, `HTML`, `CSS`')
-txt3('Infra', '`Docker`, `GCP`')
+txt2('Programming', '`Python`, `Linux`')
+txt2('Data processing/wrangling', '`SQL`, `pandas`, `numpy`')
+txt2('Data testing',  '`great expectations`')
+txt2('Data visualization', '`matplotlib`, `seaborn`, `plotly`')
+txt2('Automation', '`Selenium`')
+txt2('Machine Learning', '`scikit-learn`')
+txt2('Web development', '`Dash`, `Django`, `streamlit`, `HTML`, `CSS`')
+txt2('Infra', '`Docker`, `GCP`')
 
 #####################
 st.markdown('''
