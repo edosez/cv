@@ -63,35 +63,33 @@ st.markdown("""<hr style="height:10px;border:none;color:#333;background-color:#1
 #####################
 # Navigation
 
-st.markdown("""<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-WmUxIkItzK/KdCc6jy9oQhxixF4DzR+UGr2OmegDxuBl4c5E7Pf+T5sDWmORAR5V" crossorigin="anonymous"></script>""",
-            unsafe_allow_html=True)
-st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">',
+st.markdown('<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">',
             unsafe_allow_html=True)
 
 st.markdown("""
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #16A2CB;">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link disabled" href="/">Home<span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+        <a class="nav-link active" href="/">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#work-experience">Work Experience</a>
+        <a class="nav-link active" href="#work-experience">Work Experience</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#education">Education</a>
+        <a class="nav-link active" href="#education">Education</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link active" href="#skills">Skills</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#portfolio">Portfolio</a>
+        <a class="nav-link active" href="#portfolio">Portfolio</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#hobby">Hobby</a>
+        <a class="nav-link active" href="#hobby">Hobby</a>
       </li>
     </ul>
   </div>
