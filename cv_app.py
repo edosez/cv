@@ -22,6 +22,15 @@ with open(css_file, encoding='utf-8') as f:
 with open(resume_file, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
 
+# Remove anchor across all document
+st.markdown("""
+    <style>
+    .css-15zrgzn {display: none}
+    .css-eczf16 {display: none}
+    .css-jn99sy {display: none}
+    </style>
+    """, unsafe_allow_html=True)
+
 #####################
 # Header
 st.write('''
@@ -48,6 +57,9 @@ with st.container():
                 unsafe_allow_html=True)
     st.download_button(label=':red[Download the CV]', data=PDFbyte, file_name='CV Edoardo Sezzi.pdf', mime='application/pdf', key=None, use_container_width=True)
 
+st.markdown("""<hr style="height:10px;border:none;color:#333;background-color:#16A2CB;" /> """,
+            unsafe_allow_html=True)
+
 #####################
 # Navigation
 
@@ -62,7 +74,7 @@ st.markdown("""
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link disabled" href="/">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link disabled" href="/">Home<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#work-experience">Work Experience</a>
@@ -121,6 +133,9 @@ st.markdown('''
 - Development of predictive models and ad-hoc analysis, alongside usage of geographical information systems (GIS) to provide actionable insights to clients
 ''')
 
+st.markdown("""<hr style="height:10px;border:none;color:#333;background-color:#16A2CB;" /> """,
+            unsafe_allow_html=True)
+
 #####################
 st.markdown('''
 ## **Education**
@@ -133,6 +148,8 @@ txt('**Exchange** Economics, *Nova School of Business & Economics*, Lisbon, Port
 txt('**Bachelors of Science** Economics, *Bocconi University*, Milan, Italy',
 '2009-2012')
 
+st.markdown("""<hr style="height:10px;border:none;color:#333;background-color:#16A2CB;" /> """,
+            unsafe_allow_html=True)
 
 #####################
 st.markdown('''
@@ -146,6 +163,9 @@ txt2('Automation', '`Selenium`')
 txt2('Machine Learning', '`scikit-learn`')
 txt2('Web development', '`Dash`, `Django`, `streamlit`, `HTML`, `CSS`')
 txt2('Infra', '`Docker`, `GCP`')
+
+st.markdown("""<hr style="height:10px;border:none;color:#333;background-color:#16A2CB;" /> """,
+            unsafe_allow_html=True)
 
 #####################
 st.markdown('''
@@ -216,6 +236,8 @@ st.markdown('''
 - Keywords: `business intelligence`, `data modelling`
 ''')
 
+st.markdown("""<hr style="height:10px;border:none;color:#333;background-color:#16A2CB;" /> """,
+            unsafe_allow_html=True)
 
 #####################
 st.markdown('''
