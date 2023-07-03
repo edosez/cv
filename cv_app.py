@@ -1,7 +1,6 @@
 import streamlit as st
-from PIL import Image
 from pathlib import Path
-from utils import *
+from utils import txt, txt3
 
 # --- PATH SETTINGS ---
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
@@ -18,10 +17,10 @@ NAME = "Edoardo Sezzi"
 st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
 
 # --- LOAD CSS, PDF & PROFIL PIC ---
-with open(css_file) as f:
-  st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
+with open(css_file, encoding='utf-8') as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 with open(resume_file, "rb") as pdf_file:
-  PDFbyte = pdf_file.read()
+    PDFbyte = pdf_file.read()
 
 #####################
 # Header 
@@ -29,29 +28,30 @@ st.write('''
 # Edoardo Sezzi
 ##### *Resume* 
 ''')
-         
-st.markdown('''
-## **Info**
-''')
-st.info('**+39-3341115868**', icon='📲')
-st.info('**edoardo.sezzi@hotmail.it**', icon='✉️')
-
-#####################            
-info('<a href="https://www.linkedin.com/in/edoardo-sezzi"><img src="./app/static/linkedin_logo_blue.png" height="50" width="50" class="center">',
-        '<a href="https://github.com/edosez"><img src="./app/static/github_logo.png" height="50" width="50" class="center">',
-        PDFbyte,
-        '<img src="./app/static/foto.jpg" width="100" class="center">'
-        )
-
 st.markdown('''## **Summary**''', unsafe_allow_html=True)
 st.info('''
 Experienced data professional with cross-field skillset, combining data expertise with software engineering practices. Involved in client-related conversations and pre-sales engagement.
 ''')
 
+with st.container():
+    st.markdown('''
+    ## **Info**
+    ''')
+    st.info('**+39-3341115868**', icon='📲')
+    st.info('**edoardo.sezzi@hotmail.it**', icon='✉️')
+
+  #####################          
+    st.markdown('<a href="https://www.linkedin.com/in/edoardo-sezzi"><img src="./app/static/linkedin_logo_blue.png" height="50" width="50" class="center">', 
+                unsafe_allow_html=True)
+    st.markdown('<a href="https://github.com/edosez"><img src="./app/static/github_logo.png" height="50" width="50" class="center">', 
+                unsafe_allow_html=True)
+    st.download_button(label=':red[Download the CV]', data=PDFbyte, file_name='CV Edoardo Sezzi.pdf', mime='application/pdf', key=None, use_container_width=True)
+
 #####################
 # Navigation
 
-st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">', unsafe_allow_html=True)
+st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">', 
+            unsafe_allow_html=True)
 
 st.markdown("""
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #16A2CB;">
@@ -223,8 +223,13 @@ st.info('**Sports**', icon='🏃‍♂️')
 st.markdown('''Agonistic track and road runner
 ''')
 st.info('**Hiking**', icon='⛰️')
-st.markdown('''My greatest accomplishment has been completing the Tour of Mont Blanc in 8 days (180km and 12000m D+)
+st.markdown(
+    '''My greatest accomplishment has been 
+    completing the Tour of Mont Blanc in 8 days (180km and 12000m D+)
 ''')
 st.info('**Trading**', icon='💹')
-st.markdown('''I am a self-taught trader, I have been trading for a couple years, mainly options on indexes and certificates. I have developed a Python bot which scraped and stored data from the web. The main goal was to create an optimization algorithm to find the strategy that would maximize expected payoff for options trading given a set of constraints (e.g. margin, number of options) 
+st.markdown(
+    '''I am a self-taught trader, I have been trading for a couple years, mainly options on indexes and certificates. 
+    I have developed a Python bot which scraped and stored data from the web. The main goal was to create an optimization algorithm to find the strategy that would maximize expected payoff for options trading given a set of constraints (e.g. margin, number of options)
 ''')
+            
