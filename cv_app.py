@@ -175,10 +175,9 @@ txt2('Programming', '`Python`, `Linux`')
 txt2('Data processing/wrangling', '`SQL`, `pandas`, `numpy`')
 txt2('Data testing',  '`great expectations`')
 txt2('Data visualization', '`matplotlib`, `seaborn`, `plotly`')
-txt2('Automation', '`Selenium`')
 txt2('Machine Learning', '`scikit-learn`')
-txt2('Web development', '`Dash`, `Django`, `streamlit`, `HTML`, `CSS`')
-txt2('Infra', '`Docker`, `GCP`')
+txt2('Web development', '`Dash`, `Django`, `streamlit`, `HTML`, `CSS`, `Selenium`')
+txt2('Cloud & DevOps', '`Docker`, `GCP`')
 
 st.markdown("""<hr style="height:10px;border:none;color:#333;background-color:#16A2CB;" /> """,
             unsafe_allow_html=True)
