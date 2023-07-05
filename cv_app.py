@@ -45,7 +45,7 @@ st.markdown("""
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" href="/">Home</a>
+          <a class="nav-link active" href="#edoardo-sezzi">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" href="#work-experience">Work Experience</a>
