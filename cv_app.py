@@ -6,7 +6,7 @@ from utils import *
 # --- PATH SETTINGS ---
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "styles" / "main.css"
-resume_file = current_dir / "assets" / "CV Edoardo Sezzi - tech.pdf"
+resume_file = current_dir / "assets" / "CV Edoardo Sezzi.pdf"
 profile_pic = current_dir / "assets" / "foto.jpg"
 
 # --- GENERAL SETTINGS ---
@@ -89,7 +89,7 @@ st.markdown('''
 ''')
 
 txt('#### Data & Product, *Afiniti, Milan, Italy*', 
-    '#### 2019-Present')
+    '#### 2019-2023')
 st.info('**Product & Prototyping**')
 st.markdown('''
 - Prototypes development for new products (backend, data pipelines, frontend)
