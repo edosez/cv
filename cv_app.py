@@ -118,7 +118,7 @@ st.markdown('''
 ''')
 
 txt('#### Data & Product, *Afiniti, Milan, Italy*', 
-    '#### 2019-Present')
+    '#### 2019-2023')
 st.info('**Product & Prototyping**')
 st.markdown('''
 - Prototypes development for new products, encompassing backend, data pipelines, and frontend components
@@ -263,8 +263,9 @@ st.markdown('''Agonistic track and road runner
 ''')
 st.info('**Hiking**', icon='⛰️')
 st.markdown(
-    '''My greatest accomplishment has been 
-    completing the Tour of Mont Blanc in 8 days (180km and 12000m D+)
+    '''My greatest accomplishments have been 
+    completing the Tour of Mont Blanc in 8 days (180km and 12000m D+).
+    Next goal: climbing Kilimanjaro (5,895m above sea level) in 2023 summer
 ''')
 st.info('**Trading**', icon='💹')
 st.markdown('''
