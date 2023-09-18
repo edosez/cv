@@ -265,7 +265,7 @@ st.info('**Hiking**', icon='⛰️')
 st.markdown(
     '''My greatest accomplishments have been 
     completing the Tour of Mont Blanc in 8 days (180km and 12000m D+).
-    Next goal: climbing Kilimanjaro (5,895m above sea level) in 2023 summer
+    In August 2023, I've summited Mount Kilimanjaro (5.985m above sea level).
 ''')
 st.info('**Trading**', icon='💹')
 st.markdown('''
