@@ -270,7 +270,7 @@ st.markdown(
 st.info('**Trading**', icon='💹')
 st.markdown('''
 I am a self-taught trader, I have been trading for a couple years, mainly options on indexes and certificates. 
-I have developed a Python bot which scraped and stored data from the web. I have developed a Python bot which scraped and stored data from the web.
+I have developed a Python bot which scraped and stored data from the web.
 The main goal was to create an optimization algorithm to find the strategy that would maximize expected payoff for options trading given a set of constraints (e.g. margin, number of options)
 ''')
             
