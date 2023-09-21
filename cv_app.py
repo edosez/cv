@@ -117,7 +117,7 @@ st.markdown('''
 ## **Work Experience**
 ''')
 
-txt('#### Data & Product, *Afiniti, Milan, Italy*', 
+txt('#### Data & Product, *Afiniti US, Milan, Italy*', 
     '#### 2019-2023')
 st.info('**Product & Prototyping**')
 st.markdown('''
@@ -126,6 +126,7 @@ st.markdown('''
 ''')
 st.info('**Data, Analytics & Machine Learning**')
 st.markdown('''
+- Expanded responsibilities from Italian clients to UK and US clients
 - Responsible for data integration and data architecture design
 - Responsible for client data engagement - data requirements and data integration/architecture proposal
 - Lead client conversations about optimization metric
