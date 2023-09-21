@@ -117,7 +117,7 @@ st.markdown('''
 ## **Work Experience**
 ''')
 
-txt('#### Data & Product, *Afiniti US, Milan, Italy*', 
+txt('#### Data & Product, *Afiniti, Milan, Italy*', 
     '#### 2019-2023')
 st.info('**Product & Prototyping**')
 st.markdown('''
