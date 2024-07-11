@@ -116,6 +116,14 @@ st.markdown("""<hr style="height:10px;border:none;color:#333;background-color:#1
 st.markdown('''
 ## **Work Experience**
 ''')
+txt('#### Data, *Habacus SRL, Milan, Italy*', 
+    '#### 2024-Present')
+st.info('**Data, Analytics & Machine Learning**')
+st.markdown('''
+- Systematic data collection through web scraping + GenAI API models
+- DWH design: revisit the whole data process and designed data pipelines to assess and reduce data bottlenecks and outages. 30% improvement and still ongoing
+- Served new data assets to BI and CRM marketing automation
+''')
 
 txt('#### Data & Product, *Afiniti, Milan, Italy*', 
     '#### 2019-2023')
@@ -173,12 +181,13 @@ st.markdown('''
 ## **Skills**
 ''')
 txt2('Programming', '`Python`, `Linux`')
-txt2('Data processing/wrangling', '`SQL`, `pandas`, `numpy`')
-txt2('Data testing',  '`great expectations`')
-txt2('Data visualization', '`matplotlib`, `seaborn`, `plotly`')
+txt2('OS', '`MacOS`, `Linux`')
+txt2('ELT', '`SQL`, `dbt`, `polars`, `airbyte`, `airbyte`, `pandas`, `numpy`')
+txt2('Data testing', '`great expectations`')
+txt2('Data visualization', '`Looker`, `matplotlib`, `seaborn`, `plotly`')
 txt2('Machine Learning', '`scikit-learn`')
 txt2('Web development', '`Dash`, `Django`, `streamlit`, `HTML`, `CSS`, `Selenium`')
-txt2('Cloud & DevOps', '`Docker`, `GCP`')
+txt2('Cloud & DevOps', '`Docker`, `GCP`, `Kestra`')
 
 st.markdown("""<hr style="height:10px;border:none;color:#333;background-color:#16A2CB;" /> """,
             unsafe_allow_html=True)
@@ -186,6 +195,30 @@ st.markdown("""<hr style="height:10px;border:none;color:#333;background-color:#1
 #####################
 st.markdown('''
 ## **Portfolio**
+''')
+txt('#### **Data engineering**',
+    '#### *Habacus*')
+st.info('**DWH**')
+st.markdown('''
+- Overview: 
+  - Designed from scratch a DWH ingesting data from multiple sources (e.g. web scraping, internal databases, CRM)
+  - Implemented a data test validation framework to ensure data quality
+  - Developed a data pipeline to serve data to BI and CRM marketing automation through API
+  - Orchestrated the whole pipeline through Kestra
+- Stack: `dbt`, `airbyte`, `BigQuery`, `API`, `Docker`
+- Keywords: `data governance`, `data pipeline`, `ELT`, `data quality`
+''')
+
+txt('#### **Data enrichment**',
+    '#### *Habacus*')
+st.info('**Web scraping**')
+st.markdown('''
+- Overview: 
+  - Designed a data model to enrich existing data with external data sources coming from academic institutions
+  - Scraped data from hundreds of website and collected relevant data through OpenAI API
+  - Ingested data in the DWH
+- Stack: `selenium`, `OpenAI`, `BigQuery`, `API`, `Docker`
+- Keywords: `web scraping`, `data enrichment`, `GenAI`
 ''')
 
 txt('#### **Software and data engineering**',
@@ -267,11 +300,5 @@ st.markdown(
     '''My greatest accomplishments have been 
     completing the Tour of Mont Blanc in 8 days (180km and 12000m D+).
     In August 2023, I've summited Mount Kilimanjaro (5.895m above sea level).
-''')
-st.info('**Trading**', icon='💹')
-st.markdown('''
-I am a self-taught trader, I have been trading for a couple years, mainly options on indexes and certificates. 
-I have developed a Python bot which scraped and stored data from the web.
-The main goal was to create an optimization algorithm to find the strategy that would maximize expected payoff for options trading given a set of constraints (e.g. margin, number of options)
 ''')
             
