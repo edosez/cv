@@ -182,7 +182,7 @@ st.markdown('''
 ''')
 txt2('Programming', '`Python`, `Linux`')
 txt2('OS', '`MacOS`, `Linux`')
-txt2('ELT', '`SQL`, `dbt`, `polars`, `airbyte`, `airbyte`, `pandas`, `numpy`')
+txt2('ELT', '`SQL`, `dbt`, `polars`, `airbyte`, `pandas`, `numpy`')
 txt2('Data testing', '`great expectations`')
 txt2('Data visualization', '`Looker`, `matplotlib`, `seaborn`, `plotly`')
 txt2('Machine Learning', '`scikit-learn`')
@@ -215,7 +215,7 @@ st.info('**Web scraping**')
 st.markdown('''
 - Overview: 
   - Designed a data model to enrich existing data with external data sources coming from academic institutions
-  - Scraped data from hundreds of website and collected relevant data through OpenAI API
+  - Scraped data from hundreds of websites and extracted relevant data through OpenAI API
   - Ingested data in the DWH
 - Stack: `selenium`, `OpenAI`, `BigQuery`, `API`, `Docker`
 - Keywords: `web scraping`, `data enrichment`, `GenAI`
