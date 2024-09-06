@@ -120,6 +120,7 @@ txt('#### Data, *Habacus SRL, Milan, Italy*',
     '#### 2024-Present')
 st.info('**Data, Analytics & Machine Learning**')
 st.markdown('''
+- Prototype for new commercial offering: recommender system between jobs openings and students
 - Systematic data collection through web scraping + GenAI API models
 - DWH design: revisit the whole data process and designed data pipelines to assess and reduce data bottlenecks and outages. 30% improvement and still ongoing
 - Served new data assets to BI and CRM marketing automation
@@ -254,7 +255,7 @@ st.info('**Customer Lifetime Value**')
 st.markdown('''
 - Overview: 
   - Design and development of a Customer Lifetime Value model for improving existing revenue metric
-  - Collaboration with both internal (ML and data engineers) and external (Finance team) stakeholders
+  - Collaboration with both internal (ML and data engineers) and external (Finance team) stakeholders - Sky UK
   - The metric has been optimized using Afiniti proprietary algorithms, returning a `+30%` increase in performance compared to previous metric
 - Stack: `Python`, `SQL`, `R`, `Docker`, `Linux`
 - Keywords: `customer lifetime value`, `revenue`, `optimization`
